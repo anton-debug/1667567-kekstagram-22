@@ -2,28 +2,26 @@
 
 //Максимум и минимум включаются
 const getRandomIntInclusive = function(min, max) {
-	min = Math.ceil(min);
-	max = Math.floor(max);
+  min = Math.ceil(min);
+  max = Math.floor(max);
 
-	if (min >= 0 && max > min) {
-		return Math.floor(Math.random() * (max - min + 1)) + min;
-	} else {
-		console.log(
-			'Введите правильный диапазон (Только положительные числа, min не больше max и не равные между собой)'
-		);
-	}
+  if (min >= 0 && max > min) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+  } else {
+    alert('Введите правильный диапазон (Только положительные числа, min не больше max и не равные между собой)');
+  }
 };
 
-console.log(getRandomIntInclusive(1, 100));
+getRandomIntInclusive(50, 1000);
 
 // Функция для проверки максимальной длины строки
 
-let getLenghtStr = function(str, maxlength) {
-	if (str.length <= maxlength) {
-		return true;
-	} else {
-		return false;
-	}
+const getLenghtStr = function(str, maxlength) {
+  if (str.length <= maxlength) {
+    return true;
+  } else {
+    return false;
+  }
 };
 
-console.log(getLenghtStr('Внутри функций проблем быть не должно', 37));
+getLenghtStr('Внутри функций проблем быть не должно', 37);
