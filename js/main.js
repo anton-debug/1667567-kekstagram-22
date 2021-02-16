@@ -16,12 +16,11 @@ getRandomIntInclusive(50, 1000);
 
 // Функция для проверки максимальной длины строки
 
-const getLenghtStr = function(str, maxlength) {
-  if (str.length <= maxlength) {
+const getLengthStr = function(str, maxLength) {
+  if (str.length <= maxLength) {
     return true;
-  } else {
-    return false;
   }
+  return false
 };
 
-getLenghtStr('Внутри функций проблем быть не должно', 37);
+getLengthStr('Внутри функций проблем быть не должно', 37);
